@@ -1,4 +1,9 @@
 # ProyectoWebFinal
+Equipo LaMode - Página de Ropa
+Integrantes:
+-Cristhian Leonardo Mazun Calvo
+-Daniela Itzel Gonzalez Rios
+-Gustavo Alberto Hernandez Zavala
 
 El primer CRUD se encuentra con los favoritos en la parte de la barra de navegación
 
