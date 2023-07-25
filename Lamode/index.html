@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>LaMode</title>
+</head>
+<body>
+
+     <!-- header section starts -->
+<header class="header" id="header">
+    <a href="#" class="logo">
+        <img src="./jpg/Logo.png" alt="logo">
+    </a>
+
+    <nav class="navbar">
+        <span class="navbar-fixed">
+            <a href="#zhome">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="./favoritos/favoritos.html">Favoritos <3 </a>
+        </span>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="user-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <!-- Modal -->
+    <!-- Login -->
+    <form id="form-user" class="modal">
+        <div class="modal-content">
+            <h2>Iniciar Sesión</h2>
+            <span class="close" id="close-login">&times;</span>
+            <input type="text" id="username" placeholder="Nombre de usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button type="submit">Iniciar sesión</button>
+            <div id="loginMessage" class="msg"></div>
+            <p>¿No tienes una cuenta? <a href="#" id="goToSignUp">Regístrate aquí</a></p>
+        </div>  
+    </form>
+        
+    <form id="signUpForm" class="modal">
+        <div class="modal-content">
+            <h2>Registrarse</h2>
+            <span class="close" id="close-sign">&times;</span>
+            <input type="text" id="signupUsername" placeholder="Nombre de usuario">
+            <input type="email" id="signupEmail" placeholder="Correo electrónico">
+            <input type="password" id="signupPassword" placeholder="Contraseña">
+            <input type="text" id="signupFullName" placeholder="Nombre completo">
+            <input type="number" id="signupAge" placeholder="Edad">
+            <input type="tel" id="signupPhone" placeholder="Teléfono">
+            <button type="submit">Registrarse</button>
+            <div id="signupMessage" class="msg"></div>
+        </div>
+    </form>
+    </div>
+
+    <div class="search-form">
+        <input type="search
+        " id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="./img/cart-item-1.png" alt="cart-item-1" >
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="./img/cart-item-2.png" alt="cart-item-2" >
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="./img/cart-item-3.png" alt="cart-item-3" >
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="./img/cart-item-4.png" alt="cart-item-4" >
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+</header>
+
+<!-- header section starts -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>LaMode</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga dignissimos quasi corrupti corporis ab consequatur beatae, eaque atque architecto ratione quidem explicabo ullam dolorum nulla voluptatum et porro. Repudiandae.</p>
+        <a href="#" class="btn">get yours now!</a>
+    </div>
+</section>
+
+<!-- home section end -->
+
+<!-- about section starts -->
+
+<section class="about" id="about">
+    <h1 class="heading">
+        <span>nosotros
+        </span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="./jpg/A2.jpeg" alt="image about">
+        </div>
+
+        <div class="content">
+            <h3>style&solution</h3>
+            <p>Somos una empresa 100% Mexicana, ubicados en la ciudad de Mérida Yucatán. Nos dedicamos a dar soluciones tecnologicas en temas de fashion, moda y estilo. Nos apasiona la ropa y las miles de posibilidades que existen para crear conjuntos de todo tipo de ocacion y lugar.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+    </div>
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts -->
+
+<section class="menu" id="menu">
+    <h1 class="heading">our
+        <span>menu</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\A1.jpeg" alt="menu 1">
+            </div>
+            <h3>Cómodo y casual</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\A8.jpeg" alt="menu 2">
+            </div>
+            <h3>Casual y Gótico</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\B5.jpeg" alt="menu 3">
+            </div>
+            <h3>Elegante y casual</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\A3.jpeg" alt="menu 4">
+            </div>
+            <h3>Cómoda y fresca</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\B7.jpeg" alt="menu 5">
+            </div>
+            <h3>Para ir con los amigos</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <div class="circular-portrait">
+                <img src=".\jpg\B1.jpeg" alt="menu 6">
+            </div>
+            <h3>Reunión de noche</h3>
+            <div class="price">$15.99
+                <span>20.99</span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+
+
+
+
+    <!-- Script js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

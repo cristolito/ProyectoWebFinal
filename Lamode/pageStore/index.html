@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Mi Tienda</h1>
+
+    <div id="image"><button type="button" id="store-image-btn">Agregar Imagen</button></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-modal-btn">&times;</span>
+          <form id="store-form">
+            <label id="notice"><p>*Llenar todos los campos</p></label>
+            <label for="store-name">Nombre:</label>
+            <input type="text" id="store-name" required size="55">
+      
+            <label for="store-commercial-name">Nombre Comercial:</label>
+            <input type="text" id="store-commercial-name" required>
+      
+            <label for="store-description">Descripción:</label>
+            <textarea id="store-description" required ></textarea>
+      
+            <label for="store-location">Ubicación:</label>
+            <input type="text" id="store-location" required>
+
+            <label for="store-bank">Banco:</label>
+            <input type="text" id="store-bank" required>
+      
+            <label for="store-bank-details">Datos Bancarios:</label>
+            <input type="number" id="store-bank-details" required>
+      
+            <button type="button" id="save-store-btn">Guardar Tienda</button>
+          </form>
+        </div>
+    </div>
+    
+  </div>
+  <div class="store-details">
+    <div id="store-info">
+        <div><h2>Datos de la Tienda Agregada:</h2></div>
+        <div><p><strong>Nombre:</strong> </p></div>
+        <div><p><strong>Nombre Comercial:</strong> ${storeData.commercialName}</p></div>
+        <div><p><strong>Descripción:</strong> ${storeData.description}</p></div>
+        <div><p><strong>Ubicación:</strong> ${storeData.location}</p></div>
+        <div><p><strong>Datos Bancarios:</strong> ${storeData.bankDetails}</p></div>  
+
+    </div>
+    <button type="button" id="add-task-btn">Agregar/Editar</button>
+    <button type="button" id="delete-store-btn">Eliminar Tienda</button>
+    <button type="button" id="add-clothes"><a href="../Ropa/index.html">Agregar ropa</a></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

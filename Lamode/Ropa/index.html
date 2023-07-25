@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MiTienda</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Listado de Ropa</h1>
+    <div id="add">
+      <p>Agregar nueva prenda</p>
+      <button id="add-task-btn">+</button>
+    </div>
+    <div id="division"><br>
+      <div class="id">Id</div>
+      <div class="title">Nombre del producto</div>
+      <div class="quantity">Cantidad</div>
+      <div class="date">Fecha de ingreso</div>
+      <div class="description">Descripción</div>
+    </div>
+    <div id="tasks-container"></div>
+
+    <button id="delete-all-btn">Eliminar toda la ropa</button>
+  </div>
+
+  <div id="modal">
+    <div id="modal-form">
+      <div id="up">
+        <p><h2>Agregar nueva prenda</h2></p>
+      </div>
+      <div id="middle">
+        <p>Id</p>
+        <label for="task-id"></label>
+        <input type="text" id="task-id" size="55" required>
+        <p>Nombre</p>
+        <label for="task-title"></label>
+        <input type="text" id="task-title" size="55" required>
+        <p>Fecha de ingreso</p>
+        <label for="task-date"></label>
+        <input type="date" id="task-date" required>
+        <p>Descripción</p>
+        <label for="task-description"></label>
+        <textarea id="task-description" required></textarea>
+        <p>Cantidad</p>
+        <label for="task-quantity"></label>
+        <input type="number" id="task-quantity" size="25" required>
+      </div>
+      <div id="down">
+        <button id="cancel-task-btn">Cerrar</button>
+        <button id="save-task-btn">Agregar</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

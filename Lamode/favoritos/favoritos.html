@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Rubik:wght@500&family=Wix+Madefor+Text:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tus Favoritos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tus Favoritos</h1>
+    </header>
+    
+    <section>
+       <!-- Inicia la carda -->
+        <div class="container">
+            <img src="jpg\B6.jpeg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+        <!-- Finaliza la card -->
+
+        <div class="container">
+            <img src="jpg\B8.jpeg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_2">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\A2.jpeg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_3">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\A6.jpeg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_4">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\A9.jpeg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_5">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\C1.jpg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_6">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\C2.jpg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_7">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="container">
+            <img src="jpg\C3.jpg" alt="ropa_prevista">
+            <!-- Información -->
+            <div class="info">
+                <h4>Nombre de la tienda</h4>
+                <p class="text_info">-Precio</p>
+                <p class="text_info">-Descripción</p>
+            </div>
+            <!-- Parte de los botones -->
+            <div class="options">
+                <button class="button_option" onclick="deleteItem(this)">Eliminar</button>
+                <button class="button_option" onclick="buyItem()">Comprar</button>
+                <button class="button_option" onclick="modal_open(this)">Comentar</button>
+            </div> 
+
+            <!-- Ventana modal (para los comentarios) -->
+            <dialog id="comentarios_modal_8">
+                <h4 class="textito">Tu comentario:</h4>
+                <p class="indicaciones"><b>Solo se pueden hasta 20 caracteres</b></p>
+                <form class="card_comentarios">
+                    <textarea class="comentario" cols="30" rows="10" placeholder="Escribe aqui tu comentario..." maxlength="20"></textarea>
+                    <!-- <input type="text" maxlength="20" value="comentario"> -->
+                    <button class="button_comentario" onclick="editItem(this)">Editar</button>
+                    <button class="button_comentario" onclick="guardar(this)">Guardar</button>
+                </form>
+            </dialog>
+        </div>
+
+    <!-- NO quitar este  div por favor -->
+    <div class="gray_bg"></div>
+
+    <script src="favoritos.js"></script>
+</body>
+
+</html>
